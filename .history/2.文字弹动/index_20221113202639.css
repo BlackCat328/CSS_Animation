@@ -1,0 +1,8 @@
+body{
+    position: absolute;
+    width: 95%;
+    height: 98%;
+    background-color: skyblue;
+    background-attachment: fixed;
+    background-size: 100;
+}

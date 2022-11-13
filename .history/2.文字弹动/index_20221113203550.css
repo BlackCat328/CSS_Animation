@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'LuckiestGuy-Regular';
+    src: url('./Luckiest_Guy/LuckiestGuy-Regular.ttf');
+}
+
+body {
+    position: absolute;
+    width: 95%;
+    height: 98%;
+    background-color: skyblue;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: 'LuckiestGuy-Regular', cursive;
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background: transparent;
+    display: block;
+    box-shadow: 0 0 150px 100px rgba(255, 255, 255, 0);
+}

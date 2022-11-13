@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #00a8ff;
+}
+
+#water {
+    margin-top: 200px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid;
+    border-radius: 32% 68% 65% 35% / 35% 36% 64% 65%;
+    box-shadow: inset 10px 20px 30px rgba(0, 0, 0, 0.5),
+        10px 20px 20px rgba(0, 0, 0, 0.3),
+        15px 15px 30px rgba(0, 0, 0, 0.05),
+        inset -10px -10px 15px rgba(255, 255, 255, 0.8);
+        animation: action 3s  dion fill-mode;
+}
+
+#water::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 230px;
+    left: 42%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 49% 51% 61% 39% / 59% 56% 44% 41%;
+}
+
+#water::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 250px;
+    left: 38%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 45% 55% 40% 60% / 30% 28% 72% 70%;
+}
+
+@keyframes action {
+    25% {
+        border-radius: 50% 50% 37% 63% / 49% 54% 46% 51%;
+    }
+
+    50% {
+        border-radius: 65% 35% 78% 22% / 45% 35% 65% 55%;
+    }
+
+    100% {
+        border-radius: 38% 62% 30% 70% / 29% 47% 53% 71%;
+    }
+}
