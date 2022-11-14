@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --water-size: 100px;
+    --water-color-from: #5668ce;
+    --water-color-to: #00bcd4;
+    --bg-color: #031728;
+}
+
+body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+}
+
+.rain .drop {
+    position: absolute;
+    top: calc(50vh);
+    left: 50%;
+    z-index: 9;
+    transform: translate(-50%, -50%) rotate(-45deg);
+
+    width: var(--water-size);
+    aspect-ratio: 1;
+
+}
